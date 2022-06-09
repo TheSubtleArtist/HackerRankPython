@@ -20,9 +20,9 @@ if __name__ == '__main__':
     print(count)
 
 
-"""
-#Complex Solution
-string, substring = (input().strip(), input().strip())
-print(sum([ 1 for i in range(len(string)-len(substring)+1) if string[i:i+len(substring)] == substring]))
-
-"""
+# REGEX Solution
+import re
+a = input().strip()
+b = input().strip()
+match = re.findall('(?='+b+')',a)
+print (len(match))
