@@ -12,7 +12,7 @@ Your task is to compute their cartesian product X.
 
 from itertools import product
 
-a = list(map(int, input("A").split()))
-b = list(map(int, input("B").split()))
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
 
 print(*product(a, b))

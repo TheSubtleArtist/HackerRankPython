@@ -22,17 +22,15 @@ The next lines contain the space separated values of the desired by the customer
 """
 import collections
 
-numShoes = int(input('numshoes'))
-shoes = collections.Counter(list(map(float, input('shoeSizes').split()))) #Notice the Capital C
-customers = int(input('numCust'))
+numShoes = int(input())
+shoes = collections.Counter(map(int, input().split()))
+customers = int(input())
 income = 0
 
 for i in range(customers):
-	size, price = (list(map(float, input('Size Price').split())))
-	if shoes[size]:
-		income = income + price
-		shoes[size] -= 1
-	else:
-		print("Size not available, so no purchase")
+    size, price = map(int, input().split())
+    if shoes[size]:
+        income += price
+        shoes[size] -=1
 
 print(income)
