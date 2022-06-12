@@ -10,12 +10,14 @@ One day, she asked her student Mickey to compute the average of all the plants w
 """
 
 def average(array):
-    # your code goes here
-    x = list(dict.fromkeys(array)) #removes any duplicate values from the array
-    y = len(x)
-    z = sum (x)
-    return z / y
+    # remove duplicates
+    x = list(dict.fromkeys(array))
+    lx = len(x)
+    sx = sum(x)
+    return sx / lx
 
-array = [ 10 ,20, 30 , 40, 50, 60, 60 , 10 , 70 , 90]
-
-print(average(array))
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
