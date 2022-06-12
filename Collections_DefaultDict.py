@@ -22,25 +22,24 @@ Print the indices of each m occurrence of in group A.
 If it does not appear, print -1 .
 """
 from collections import defaultdict
+# set up the default dictionary to receive inputs
+grpA = defaultdict(list)
 
-d = defaultdict(list)
-list1=[]
+# group b will contains the second set of input
+# the function must search the deafault dictonary for values in grpB
+grpB = []
 
-#n, m = map(int, input().split())
 
-n=5
-m = 2
+n, m = map(int, input().split())
 
-for i in range(0,n):
-    d[input('inA')].append(i+1)
-    print(d)
+for i in range(1, n+1):
+    grpA[input()].append(i)
 
-for i in range(0,m):
-    list1=list1+[input('inB')]
-    print(list1)
+for i in range(m):
+    grpB.append(input())
 
-for i in list1:
-    if i in d:
-        print(" ".join( map(str,d[i]) ))
+for i in grpB:
+    if i in grpA:
+        print(' '.join(map(str, grpA[i])))
     else:
-        print(-1)
+        print(str(-1))    
