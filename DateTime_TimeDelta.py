@@ -49,6 +49,28 @@ for i in range(n):
 	print(int(deltaSeconds))
 
 
+#Even Better:
+
+import datetime
+frmtDate = '%a %d %b %Y %X %z'
+
+if __name__ == '__main__':
+    for i in range(int(input())):
+        dateA = datetime.datetime.strptime(input(), frmtDate)
+        dateB = datetime.datetime.strptime(input(), frmtDate)
+        
+        print(int(abs(dateB-dateA).total_seconds()))
+
+
+# Just in case you need to get really confusing:
+
+import datetime
+frmtDate = '%a %d %b %Y %X %z'
+
+if __name__ == '__main__':
+    for i in range(int(input())):
+        print(int(abs(datetime.datetime.strptime(input(), frmtDate)-datetime.datetime.strptime(input(), frmtDate)).total_seconds()))
+        
 
 
 
