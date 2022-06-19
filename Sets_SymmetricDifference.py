@@ -18,22 +18,18 @@ https://www.youtube.com/watch?v=0Ug0BbVHuTk
 """
 
 # this is unnecessary input
-englishSub = input()
+eSub = input()
 
 #necessary input
-engishStu = set(map(int, input().split()))
+eStu = set(map(int, input().split()))
 
 #unnecessary input
-frenchSub = input()
+fSub = input()
 
 #necessary input
-frenchStu = set(map(int, input().split()))
+fStu = set(map(int, input().split()))
 
 # creates the symmetric difference
-newStu = engishStu ^ frenchStu
+print(*sorted(eStu ^ fStu), sep='\n')
 
-# for testing only, will get rejected if included in the answer
-print(newStu)
 
-# the answer
-print(len(newStu))

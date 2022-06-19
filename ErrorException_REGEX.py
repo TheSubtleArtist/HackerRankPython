@@ -8,11 +8,12 @@ https://www.youtube.com/watch?v=WQlKPdKVXfw
 """
 
 import re
-
-def isvalidregex(regex):
-    try: re.compile(regex)
+def vRegex(string):
+    try:re.compile(string)
     except re.error: return False
     return True
 
-for i in range(int(input())):
-    print(isvalidregex(input()))
+if __name__ == '__main__':
+    for i in range (int(input())):
+        print(vRegex(input()))
+        

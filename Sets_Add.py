@@ -8,12 +8,12 @@ Rupal has a huge collection of country stamps.
 She decided to count the total number of distinct country stamps in her collection. She asked for your help. 
 You pick the stamps one by one from a stack of country stamps.
 
+Output the total number of DISTINCT country stamps on a single line.
+
 """
-
 cntry = set()
-n = int(input())
-for i in range(n):
-    entry = input()
-    cntry.add(entry.upper())
-
-print(len(cntry))
+if __name__ == '__main__':
+    for i in range(int(input())):
+        cntry.add(input().upper())
+    print(len(cntry))
+        

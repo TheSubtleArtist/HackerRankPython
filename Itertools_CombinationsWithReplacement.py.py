@@ -14,20 +14,9 @@ A single line containing the string
 and integer value separated by a space.
 """
 
-from itertools import combinations_with_replacement
+import itertools
 
-strng, size = input().split()
-strng = strng.upper()
-strng = list(strng)
-print(strng)
-print(size)
-"""
-This actually didn't work, it missed the letter "h". no idea why
-newList = sorted(list(combi(strng, int(size))))
-
-for i in newList:
-    print("".join(i))
-"""
-
-for i in combinations_with_replacement(sorted(strng), int(size)):
-    print("".join(i))
+if __name__ == '__main__':
+    string, k = input().split()
+    for each in itertools.combinations_with_replacement(sorted(string.upper()),int(k)):
+        print(''.join(each))

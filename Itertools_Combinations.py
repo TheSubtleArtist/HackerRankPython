@@ -10,11 +10,8 @@ Your task is to print all possible combinations, up to size k, of the string in 
 
 import itertools
 
-strng, size = input('String and Size').split()
-strng = strng.upper()
-print(strng)
-print(size)
-
-for i in range(1, int(size)+1):
-	for each in itertools.combinations(sorted(strng), i):
-		print(''.join(each))
+string, size = input().split()
+string = string.upper().strip()
+for i in range(1,int(size)+1):
+    for each in itertools.combinations(sorted(string),i):
+        print(''.join(each))
