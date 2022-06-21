@@ -8,6 +8,15 @@ If the input iterable is sorted, the permutation tuples will be produced in a so
 
 You are given a string .
 Your task is to print all possible permutations of size of the string in lexicographic sorted order.
+
+Input Format
+
+A single line of input consisting of the string S .
+
+Output Format
+
+A single line of output consisting of the modified string.
+
 """
 
 from itertools import permutations
