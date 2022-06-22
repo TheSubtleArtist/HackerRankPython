@@ -32,15 +32,8 @@ groupby(strng)
 for key, group in (groupby(strng)):
     print(f'({len(list(group))}, {key})', end=" ")
 
-"""
-# works, just incomplete
-for key, group in (groupby(strng)):
-    print(len(list(group)), key)
-"""
 
+# Another solutions:
 
-"""
-# Doesn't work right
-for key, group in (groupby(strng)):
-    print(tuple(len(list(group)), key), end=" ")
-"""
+for key, group in (groupby(input())):
+    print(f'({len(list(group))}, {key})', end=" ")
