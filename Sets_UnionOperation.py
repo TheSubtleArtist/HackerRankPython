@@ -41,3 +41,16 @@ print(unionStu)
 
 # the answer
 print(len(unionStu))
+
+
+# MOre advanced answer: 
+
+if __name__ == '__main__':
+    #unneccessary input
+    e = input()
+    #necessary input
+    enStu = set(map(int, input().split()))
+    # another unnecessary input
+    f = input()
+    frStu = set(map(int, input().split()))
+    print(len(enStu | frStu))
