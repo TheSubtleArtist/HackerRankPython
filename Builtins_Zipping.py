@@ -8,12 +8,19 @@ The next X lines contains the space separated marks obtained by students in a pa
 Python’s zip() function creates an iterator that will aggregate elements from two or more iterables. 
 You can use the resulting iterator to quickly and consistently solve common programming problems, like creating dictionaries. 
 
+Task:
+The National University conducts an examination of N students in X subjects.
+Comput the average scores of each student
+
+Input:
+The first line contains N and X, separated by a space
+The next X lines contains the space separated marks obtained by students in a particular subject.
 
 https://www.youtube.com/watch?v=Kn6GRtiY4eM
 
 """
 
-# create the list of collecting scores
+# create the list for collecting scores
 thisData = []
 
 # respective values for numbers of students and exams

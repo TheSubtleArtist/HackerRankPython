@@ -24,23 +24,23 @@ The fourth line contains space separated roll numbers of those students.
 https://www.youtube.com/watch?v=Gb8zMt6gl-c
 """
 
-# this is unnecessary input
-englishSub = input()
 
-#necessary input
-engishStu = set(map(int, input().split()))
 
-#unnecessary input
-frenchSub = input()
 
-#necessary input
-frenchStu = set(map(int, input().split()))
+if __name__ == '__main__':
+    # this is unnecessary input
+    englishSub = input()
 
-# creates the intersection
-intersectionStu = engishStu & frenchStu
+    #necessary input
+    engishStu = set(map(int, input().split()))
 
-# for testing only, will get rejected if included in the answer
-print(intersectionStu)
+    #unnecessary input
+    frenchSub = input()
 
-# the answer
-print(len(intersectionStu))
+    #necessary input
+    frenchStu = set(map(int, input().split()))
+
+    # Answer 
+    print(len(engishStu & frenchStu))
+
+

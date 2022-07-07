@@ -25,23 +25,19 @@ The fourth line contains space separated roll numbers of those students.
 
 """
 
-# this is unnecessary input
-englishSub = input()
 
-#necessary input
-engishStu = set(map(int, input().split()))
+if __name__ == '__main__':
+    # this is unnecessary input
+    englishSub = input()
 
-#unnecessary input
-frenchSub = input()
+    #necessary input
+    engishStu = set(map(int, input().split()))
 
-#necessary input
-frenchStu = set(map(int, input().split()))
+    #unnecessary input
+    frenchSub = input()
 
-# creates the difference
-intersectionStu = engishStu - frenchStu
+    #necessary input
+    frenchStu = set(map(int, input().split()))
 
-# for testing only, will get rejected if included in the answer
-print(intersectionStu)
-
-# the answer
-print(len(intersectionStu))
+    # Answer 
+    print(len(engishStu - frenchStu))

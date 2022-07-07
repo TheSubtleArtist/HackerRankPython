@@ -17,19 +17,22 @@ https://www.youtube.com/watch?v=0Ug0BbVHuTk
 
 """
 
-# this is unnecessary input
-eSub = input()
 
-#necessary input
-eStu = set(map(int, input().split()))
+if __name__ == '__main__':
 
-#unnecessary input
-fSub = input()
+    # this is unnecessary input
+    eSub = input()
 
-#necessary input
-fStu = set(map(int, input().split()))
+    #necessary input
+    eStu = set(map(int, input().split()))
 
-# creates the symmetric difference
-print(*sorted(eStu ^ fStu), sep='\n')
+    #unnecessary input
+    fSub = input()
 
+    #necessary input
+    fStu = set(map(int, input().split()))
 
+    # creates the symmetric difference
+    #print(*sorted(eStu ^ fStu), sep='\n')
+
+    print(len(eStu ^ fStu))

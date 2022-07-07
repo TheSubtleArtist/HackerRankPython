@@ -20,6 +20,10 @@ Input Format
 
 The first line consists of an integer K, the size of each group.
 The second line contains the unordered elements of the room number list.
+
+Output Format
+
+Output the Captain's room number.
 """
 
 import collections
