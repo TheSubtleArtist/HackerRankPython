@@ -11,7 +11,9 @@ https://www.w3schools.com/python/python_regex.asp
 import re
 
 # python comprehension works from the inside out
+
 # re.split has two arguements (pattern, string)
+
 # r'[.,]+' is the pattern and input() is the string
 # if stdin = 1,000,000 the output of re.split(r'[.,]+', input()) is a three element list: ['1', '000', '000]
 #
@@ -22,5 +24,13 @@ import re
 # since print() is called with a carriage return separator, all true elements of the iterable are printed on new lines.
 
 
+if __name__ == '__main__':
+     inNum = input()
+     splitNum = re.split('[.,]', inNum)
+     print(each for each in splitNum)
+
+
+
+# Comprehension
 print(*filter(None, re.split(r'[.,]+', input())), sep='\n')
 
