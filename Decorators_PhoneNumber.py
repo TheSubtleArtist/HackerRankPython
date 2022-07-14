@@ -35,31 +35,6 @@ Sample Output:
 +91 98756 41230
 """
 
-"""
-Long Form Solution:
-
-
-number = list()
-
-N = int(input())
-
-for i in range (N):
-    number.append(str(input()))
-
-def wrapper(f):
-    def fun(l):
-        return sorted([function(i) for i in number])
-    return (fun)
-
-@wrapper
-def standardize(number):
-    return ("+91" + " ") + number[-10:-5] + " " + number[-5:]
-
-print('\n'.join(standardize(number)))
-"""
-
-
-# Solution:
 
 def wrapper(f):
     def fun(l):

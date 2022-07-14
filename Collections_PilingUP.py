@@ -18,32 +18,24 @@ second line of each test case contains n number of blocks
 from collections import deque
 
 
-def stack(listSize, theList):
+def checkStack(listSize, theList):
+    numBlocks = listSize
     blocks = theList
-    x = float('inf')
+    #print(blocks)
     while blocks:
-        mySpot = blocks.popleft() if blocks[0]>blocks[-1] else blocks.pop() 
-        if int(mySpot) > float(x): 
+        bigNum = blocks.popleft() if blocks[0] > blocks[-1] else blocks.pop()
+        if not blocks:
+            return "Yes"
+        if blocks[0] > bigNum or blocks[-1] > bigNum:
             return 'No'
-        else:
-            x = mySpot
-    return 'Yes'    
-    
+        
 
 if __name__ == '__main__':
     for i in range(int(input())):
         numBlocks = int(input())
-        blocks = deque(input().split())
-        print(stack(numBlocks, blocks))
+        blocks = deque(map(int, input().split()))
+        #print(blocks)
+        print(checkStack(numBlocks, blocks))
     
 
 
-if __name__ == '__main__':
-    #lstA = [4,3,2,1,3,4]
-    #numBlocks = len(lstA)
-    #blocks = deque(lstA)
-
-    lstB = [1,3,2]
-    numBlocks = len(lstB)
-    blocks = deque(lstB)
-    print(stack(numBlocks, blocks))
