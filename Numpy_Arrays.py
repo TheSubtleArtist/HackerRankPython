@@ -1,5 +1,9 @@
 """
 Arrays:
+The NumPy (Numeric Python) package helps us manipulate large arrays and matrices of numeric data.
+
+To use the NumPy module, we need to import it using:
+
 A NumPy array is a grid of values. 
 They are similar to lists, except that every element of an array must be the same type.
 
